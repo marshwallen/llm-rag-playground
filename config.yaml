@@ -1,0 +1,17 @@
+platform:
+  OpenAI:
+    api_key: 
+    base_url: 
+    model: gpt-3.5-turbo
+    embedding_dim:
+  Qwen:
+    api_key: 
+    base_url: https://dashscope.aliyuncs.com/compatible-mode/v1
+    model: qwen-plus
+    embedding_dim: 1024
+  DeepSeek:
+    api_key: 
+    base_url: https://api.deepseek.com
+    model: deepseek-chat
+    embedding_dim:
+used: Qwen
