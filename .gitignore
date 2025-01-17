@@ -1,0 +1,10 @@
+# ignore
+
+*.pyc
+__pycache__/
+venv/
+*.log
+.DS_Store
+Thumbs.db
+
+config.yaml
