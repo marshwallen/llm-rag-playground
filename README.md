@@ -41,6 +41,13 @@ python main.py
 ## Bilibili RAG
 通过 LLM 与本地 Milvus 的交互，实现 Bilibili 某些 UP主 下视频评论区内容的检索。检索构造的 SYSTEM_PROMPT 如下：
 ```python
+# 特殊符号定义
+unknow_symbol = "<unk>"
+answer_symbol = "<ans>"
+tips_symbol_s = "<tip>"
+tips_symbol_e = "</tip>"
+max_tries = 5
+
 system_prompt = f"""
     人类：你是一个人工智能助手，我会问你一些问题。首先你应该不依赖外部检索尝试给出问题的答案，如果不确定问题的答案，请返回 {unknow_symbol} 以提示本地去检索。如果答案确定，请返回 {answer_symbol} 以结束问答。
     你只有 {max_tries} 次机会尝试回答这个问题。每次结束回答且无法给出问题的答案时，你可以用 {tips_symbol_s} 来告诉我你不知道的部分，以提示我继续尝试本地检索。例如，你可以用 {tips_symbol_s} XXX {tips_symbol_e} 来包裹问题，其中XXX是你想进一步询问我的问题。记住，无论在什么情况下，你都需要返回之前所定义的三种特殊符号以结束问答。
