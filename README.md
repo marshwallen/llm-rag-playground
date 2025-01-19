@@ -24,7 +24,7 @@ pip install -r requirements.txt
 1. **下载并解压数据**
 ```sh
 # Download milvus_docs_2.4.x_en.zip
-cd simple_rag/
+cd rag-milvus/simple_rag/
 sh prepare_data.sh
 
 # [可选]手动向 milvus 数据库中插入上述 embedding 后的数据（初始化）
