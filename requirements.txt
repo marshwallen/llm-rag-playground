@@ -1,0 +1,8 @@
+dashscope==1.20.13
+llama_index==0.12.11
+modelscope==1.20.0
+numpy==2.2.2
+openai==1.59.8
+pymilvus==2.5.3
+PyYAML==6.0.2
+tqdm==4.67.1

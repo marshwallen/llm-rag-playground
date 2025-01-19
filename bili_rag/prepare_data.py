@@ -57,7 +57,7 @@ def main():
             comment_detail[k]["parent_content"] = "None"
 
     # 构造结构化文档
-    # 文档结构为： "[视频发布时间：xxxx年xx月xx日][视频标题：xxx][视频简介：xxx][评论时间：xxxx年xx月xx日][评论者昵称：xxx][父级评论：xxx][评论内容：xxx]"
+    # 文档结构为： "[ID: xxx][视频发布时间：xxxx年xx月xx日][视频标题：xxx][视频简介：xxx][评论时间：xxxx年xx月xx日][评论者昵称：xxx][父级评论：xxx][评论内容：xxx]"
     comments = []
     for k,v in tqdm(comment_detail.items()):
         v_create_time = convert_timestamp(v["viedo_info"]["create_time"])
