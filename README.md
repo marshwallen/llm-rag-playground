@@ -82,6 +82,7 @@ BILI_CREATOR_ID_LIST = [
 ```
 - 执行命令
 ```sh
+cd MediaCrawler/
 python main.py --platform bili --lt qrcode --type creator
 ```
 - 数据拷贝
@@ -94,7 +95,7 @@ python main.py --platform bili --lt qrcode --type creator
 # s = "[ID: xxx][视频发布时间：xxxx年xx月xx日][视频标题：xxx][视频简介：xxx][评论时间：xxxx年xx月xx日][评论者昵称：xxx][父级评论：xxx][评论内容：xxx]"
 
 # 执行命令
-cd bili_rag/
+cd rag-milvus/bili_rag/
 python prepare_data.py
 
 # [可选]手动向 milvus 数据库中插入上述 embedding 后的数据（初始化）
