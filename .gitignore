@@ -169,3 +169,7 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+demo_api/data/
+bili_rag/data/
+bili_rag/model/
