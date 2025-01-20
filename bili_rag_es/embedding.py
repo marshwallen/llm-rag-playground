@@ -17,12 +17,12 @@ class EmbeddingModel:
         """
         self.model_id = model_id
 
-        if not os.path.exists(f"./model/{model_id}"):
-            snapshot_download(model_id, cache_dir="./model", revision='master')
-            shutil.rmtree("./model/._____temp")
+        if not os.path.exists(f"../model/{model_id}"):
+            snapshot_download(model_id, cache_dir="../model", revision='master')
+            shutil.rmtree("../model/._____temp")
 
         self.pipeline_se = pipeline(Tasks.sentence_embedding,
-                            model=f"./model/{model_id}",
+                            model=f"../model/{model_id}",
                             sequence_length=sequence_length
                             ) # sequence_length 代表最大文本长度，默认值为128
 

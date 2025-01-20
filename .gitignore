@@ -170,6 +170,6 @@ cython_debug/
 # PyPI configuration file
 .pypirc
 
-simple_rag/data/
-bili_rag/data/
-bili_rag/model/
+data/
+model/
+elastic-start-local/

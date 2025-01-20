@@ -4,7 +4,6 @@ from glob import glob
 from openai import OpenAI
 from embedding import EmbeddingModel
 import yaml
-from init_milvus import init_milvus
 import os
 from pymilvus import MilvusClient
 import re
@@ -22,7 +21,7 @@ class BiliMilvusRAG:
         # 初始化向量数据库milvus
         db_file = "./data/milvus.db"
         if not os.path.exists(db_file):
-            init_milvus("./data/comments.txt")
+            raise Exception(f"Please run prepare_data.py first.")
         
         self.milvus_client = MilvusClient(uri=db_file)
         self.collection_name = "bili_comments"  
