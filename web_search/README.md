@@ -56,6 +56,11 @@ D --> F[合并结果]
 F --> E
 ```
 
+## BochaAI/open-webui-Bocha
+- **官方教程**：Deepseek满血+联网本地部署教程：在 Ollama + OpenWebUI 中使用博查联网搜索能力
+- Bocha AI插件将Bocha AI开放平台无缝集成到Ollama的WebUI中，赋予您的大型语言模型（LLMs）实时互联网连接能力和先进的搜索功能。通过利用Bocha AI的搜索API，您的AI应用程序现在可以访问来自数十亿网页和可信内容源的高质量、最新的知识——包括新闻、图片、视频、百科全书、旅游数据、学术论文等 [[引用]](https://aq6ky2b8nql.feishu.cn/wiki/YGp9wMuEKiYYIjkeo0ncIETRnBg)
+- **仓库地址**：https://github.com/BochaAI/open-webui-Bocha
+
 # Reference
 - https://aq6ky2b8nql.feishu.cn/wiki/HmtOw1z6vik14Fkdu5uc9VaInBb
 - https://langchain-ai.github.io/langgraph/#example
