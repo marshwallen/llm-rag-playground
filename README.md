@@ -16,15 +16,20 @@ pip install -r requirements.txt
 ```
 
 ## Simple RAG
-构建简单 RAG Demo，实现对 Milvus 官方文档的检索
-- https://github.com/marshwallen/llm-rag-playground/tree/main/simple_rag
-
-## Bilibili RAG (Milvus)
-通过 LLM 与 Milvus 数据库的交互，实现 Bilibili 某些 UP主 下视频评论区内容的检索
-- https://github.com/marshwallen/llm-rag-playground/tree/main/bili_rag_milvus
+- 构建简单 RAG Demo，实现对 Milvus 官方文档的检索
+- 跳转：https://github.com/marshwallen/llm-rag-playground/tree/main/simple_rag
 
 ## Bilibili RAG (Elasticsearch)
-通过 LLM 与开源 Elasticsearch 数据库的交互，实现 Bilibili 某些 UP主 下视频评论区内容的检索
+- 通过 LLM 与开源 Elasticsearch 数据库的交互，实现 Bilibili 某些 UP主 下视频评论区内容的检索
 - https://github.com/marshwallen/llm-rag-playground/tree/main/bili_rag_es
+
+## Bilibili RAG (Milvus)
+- 通过 LLM 与 Milvus 数据库的交互，实现 Bilibili 某些 UP主 下视频评论区内容的检索
+- 跳转：https://github.com/marshwallen/llm-rag-playground/tree/main/bili_rag_milvus
+
+## Bochaai RAG (OLLAMA + Milvus)
+- 这里使用博查AI多模态搜索 (https://bochaai.com/) 的 API 作为商业化 RAG 的实现。
+- LLM 后端为 OLLAMA，Milvus 作为数据存储
+- 跳转：https://github.com/marshwallen/llm-rag-playground/tree/main/web_search
 
 
