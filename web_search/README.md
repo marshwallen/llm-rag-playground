@@ -46,14 +46,15 @@ python run.py --ollama_url http://localhost:11434 --ollama_model deepseek-r1:8b
 6. 最后的检索结果是本地数据库资源和在线检索结果的结合
 
 ### 一图流如下
-```sh
-A[用户提问] --> B{本地检索}
-B -->|结果存在| C[相关性评估]
-B -->|无结果| D[网络检索]
-C -->|相关| E[生成回答]
-C -->|不相关| D
-D --> F[合并结果]
-F --> E
+```mermaid
+graph TD
+  A[用户提问] --> B{本地检索}
+  B -->|结果存在| C[相关性评估]
+  B -->|无结果| D[网络检索]
+  C -->|相关| E[生成回答]
+  C -->|不相关| D
+  D --> F[合并结果]
+  F --> E
 ```
 
 ## BochaAI/open-webui-Bocha
