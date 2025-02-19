@@ -21,7 +21,7 @@ pip install -r requirements.txt
 
 ## Bilibili RAG (Elasticsearch)
 - 通过 LLM 与开源 Elasticsearch 数据库的交互，实现 Bilibili 某些 UP主 下视频评论区内容的检索
-- https://github.com/marshwallen/llm-rag-playground/tree/main/bili_rag_es
+- 跳转：https://github.com/marshwallen/llm-rag-playground/tree/main/bili_rag_es
 
 ## Bilibili RAG (Milvus)
 - 通过 LLM 与 Milvus 数据库的交互，实现 Bilibili 某些 UP主 下视频评论区内容的检索
